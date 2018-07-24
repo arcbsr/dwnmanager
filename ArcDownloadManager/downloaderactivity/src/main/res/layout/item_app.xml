@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="4dp">
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="90dp"-->
+        <!--android:paddingBottom="16dp"-->
+        <!--android:paddingLeft="5dp">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/ivIcon"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--app:srcCompat="@drawable/ic_image_black_24dp" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/item_rem"-->
+            <!--android:layout_width="30dip"-->
+            <!--android:layout_height="30dip"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="10dip"-->
+            <!--android:layout_marginRight="6dip"-->
+            <!--app:srcCompat="@drawable/ic_close_red_24dp" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btnDownload"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toLeftOf="@+id/item_rem"-->
+            <!--android:backgroundTint="@android:color/holo_orange_dark"-->
+            <!--android:text="@string/Download"-->
+            <!--android:textAppearance="?android:textAppearanceSmall"-->
+            <!--android:textColor="@android:color/black" />-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/rl"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="60dip"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_toLeftOf="@+id/item_rem"-->
+            <!--android:layout_toRightOf="@+id/ivIcon">-->
+
+            <!--<ProgressBar-->
+                <!--android:id="@+id/progressBar"-->
+                <!--style="@style/Widget.AppCompat.ProgressBar.Horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="10dp"-->
+                <!--android:layout_above="@+id/tvName"-->
+                <!--android:layout_marginLeft="5dip"-->
+                <!--android:layout_marginRight="5dip"-->
+                <!--android:max="100"-->
+                <!--android:progressBackgroundTint="@color/colorPrimary"-->
+                <!--android:progressTint="@color/colorPrimary" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvName"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:ellipsize="end"-->
+                <!--android:maxLines="2"-->
+                <!--android:paddingLeft="5dip"-->
+                <!--android:text="source"-->
+                <!--android:textAppearance="?android:textAppearanceMedium"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:textSize="14sp" />-->
+
+
+            <!--&lt;!&ndash;<com.ndroid.CoolButton xmlns:custom="http://schemas.android.com/apk/res-auto"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/btnDownload"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="@android:color/holo_green_dark"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="@string/Download"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="@android:color/white"&ndash;&gt;-->
+            <!--&lt;!&ndash;custom:border_color="@android:color/holo_green_light"&ndash;&gt;-->
+            <!--&lt;!&ndash;custom:border_radius="10"&ndash;&gt;-->
+            <!--&lt;!&ndash;custom:border_stroke="5" />&ndash;&gt;-->
+            <!--&lt;!&ndash;<info.hoang8f.widget.FButton&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/btnDownload"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="@string/Download"&ndash;&gt;-->
+            <!--&lt;!&ndash;fbutton:buttonColor="@android:color/holo_orange_dark"&ndash;&gt;-->
+            <!--&lt;!&ndash;fbutton:cornerRadius="5dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;fbutton:shadowColor="@android:color/holo_orange_dark"&ndash;&gt;-->
+            <!--&lt;!&ndash;fbutton:shadowEnabled="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;fbutton:shadowHeight="5dp" />&ndash;&gt;-->
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:layout_below="@+id/rl"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:layout_toLeftOf="@id/item_rem"-->
+            <!--android:layout_toRightOf="@+id/ivIcon"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvDownloadPerSize"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:textColor="@android:color/holo_orange_dark" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvStatus"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:text=""-->
+                <!--android:textColor="@android:color/holo_blue_dark" />-->
+        <!--</RelativeLayout>-->
+
+
+    <!--</RelativeLayout>-->
+</android.support.v7.widget.CardView>
