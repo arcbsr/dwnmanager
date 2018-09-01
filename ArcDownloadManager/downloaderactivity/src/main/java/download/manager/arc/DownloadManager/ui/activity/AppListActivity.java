@@ -3,6 +3,7 @@ package download.manager.arc.DownloadManager.ui.activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 
 import download.manager.arc.DownloadManager.ui.fragment.ListViewFragment;
 import download.manager.arc.downloader.R;
@@ -31,5 +32,15 @@ public class AppListActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("Download Manager");
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case android.R.id.home:
+                finish();
+                return false;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

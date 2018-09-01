@@ -76,6 +76,10 @@ public class ListViewFragment extends Fragment implements OnItemClickListener<Ap
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        if(mAppInfos.size()==0){
+            listView.setEmptyView(getView().findViewById(R.id.empty_list));
+            return;
+        }
         listView.setAdapter(mAdapter);
         mAdapter.setData(mAppInfos);
     }
