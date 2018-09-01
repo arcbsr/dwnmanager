@@ -3,6 +3,7 @@ package download.manager.arc.DownloadManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Environment;
+
 import download.manager.arc.DownloadManager.ui.activity.AppListActivity;
 import download.manager.arc.Utils.ArcSharedPrefUtil;
 import download.manager.arc.model.FileInfo;
@@ -23,6 +24,10 @@ public class DownloadBind {
         context.startActivity(intent);
         //Log.w("playing path", data.id);
         //startAppVideo(context, data.id);
+    }
+
+    public static void downloadQueeSave(Context context, FileInfo data) {
+        DataSource.getInstance().setData(data, context);
     }
 
     public static void downloadQueeInit(Context context, FileInfo data[]) {
